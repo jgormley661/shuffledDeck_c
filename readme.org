@@ -1,0 +1,8 @@
+* C Program that makes a shuffled deck of cards
+
+** Code style
+All "number of" variables start with an n_ :eg:
+int n_cards = 4;
+
+functions starting with _ are internal and not intended to be used in main :eg:
+void _swapCards(Card *a, Card *b);
