@@ -10,27 +10,27 @@ int main(int argc, char *argv[]){
 
   srand(time(NULL));
 
-  const int n_suits = 4;
-  const int n_faces = 13;
-  const int n_deck = n_suits * n_faces;
-  const int print_start = 0;
-  const int print_end = 5;
+  const int N_SUITS = 4;
+  const int N_FACES = 13;
+  const int N_DECK = N_SUITS * N_FACES;
+  const int PRINT_START = 0;
+  const int PRINT_END = N_DECK;
   
-  Card deck[n_deck];
+  Card deck[N_DECK];
   
   //Assign values to an array of Card structs.
-  deckCreate(deck, n_suits, n_faces);
+  deckCreate(deck, N_SUITS, N_FACES);
 
   //Print Card array between start and end positions.
   printf("\nNot Shuffled\n");
-  deckPrint(deck, print_start, print_end);
+  deckPrint(deck, PRINT_START, PRINT_END);
 
   //Shuffle an array of Card structs with Fisher-Yates Shuffle
-  deckShuffle(deck, n_deck);
+  deckShuffle(deck, N_DECK);
 
   //Print Card array between start and end positions.
   printf("\nShuffled\n");
-  deckPrint(deck, print_start, print_end);
+  deckPrint(deck, PRINT_START, PRINT_END);
   
   return 0;
 }

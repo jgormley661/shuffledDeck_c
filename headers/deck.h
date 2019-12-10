@@ -7,7 +7,7 @@
 void _swapCards(Card *a, Card *b);
 
 //Assign values to an array of Card structs.
-void deckCreate(Card *deck, int nSuits, int nFaces);
+void deckCreate(Card *deck, int n_suits, int n_faces);
 
 //Shuffle an array of Card structs with Fisher-Yates Shuffle.
 void deckShuffle(Card *deck, int n);
