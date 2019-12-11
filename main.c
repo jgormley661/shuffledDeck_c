@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
 
   int n_suits = 4;
   int n_faces = 13;
-  int n_deck = N_SUITS * N_FACES;
+  int n_deck = n_suits * n_faces;
   
   Card deck[n_deck];
   
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]){
   deckPrint(deck, print_start, print_end);
 
   //Shuffle an array of Card structs with Fisher-Yates Shuffle
-  deckShuffle(deck, N_DECK);
+  deckShuffle(deck, n_deck);
 
   //Print Card array between start and end positions.
   printf("\nShuffled\n");
