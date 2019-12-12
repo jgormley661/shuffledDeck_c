@@ -14,7 +14,7 @@ void _swapCards(Card *a, Card *b){
 //Assign values to an array of Card structs.
 void deckCreate(Card *deck, int n_suits, int n_faces){
 
-  int card_counter = 0;
+   int card_counter = 0;
 
   for(int i = 0; i < n_suits; ++i){
     for(int j = 0; j < n_faces; ++j){

@@ -6,13 +6,13 @@
 #include "headers/deck.h"
 
 int main(int argc, char *argv[]){
-  printf("Deck of Cards program - C - John Gormley \n");
+  printf("Deck of Cards program - C - John Gore \n");
 
   srand(time(NULL));
 
-  int n_suits = 4;
-  int n_faces = 13;
-  int n_deck = n_suits * n_faces;
+  const int n_suits = 2;
+  const int n_faces = 5;
+  const int n_deck = n_suits * n_faces;
   
   Card deck[n_deck];
   
