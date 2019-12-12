@@ -5,13 +5,15 @@
 #include "headers/card.h"
 #include "headers/deck.h"
 
-int main(int argc, char *argv[]){
+int main(){
   printf("Deck of Cards program - C - John Gore \n");
 
+  //Initiate random seed
   srand(time(NULL));
 
-  const int n_suits = 2;
-  const int n_faces = 5;
+  //Define deck size
+  const int n_suits = 4;
+  const int n_faces = 13;
   const int n_deck = n_suits * n_faces;
   
   Card deck[n_deck];

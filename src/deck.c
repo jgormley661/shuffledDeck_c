@@ -5,7 +5,7 @@
 #include "../headers/card.h"
 
 //Swap cards for use in Fisher-Yates Shuffle function.
-void _swapCards(Card *a, Card *b){
+static void swapCards(Card *a, Card *b){
   Card temp = *a;
   *a = *b;
   *b = temp;
@@ -31,7 +31,7 @@ void deckShuffle(Card *deck, int n){
   if(n > 1){
     for(int i = n-1; i > 0; --i){
       int j = rand() % (i+1);
-      _swapCards(&deck[i], &deck[j]);
+      swapCards(&deck[i], &deck[j]);
     }
   }
 }

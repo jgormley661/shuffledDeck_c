@@ -3,9 +3,6 @@
 
 #include "card.h"
 
-//Swap cards for use in Fisher-Yates Shuffle function.
-void _swapCards(Card *a, Card *b);
-
 //Assign values to an array of Card structs.
 void deckCreate(Card *deck, int n_suits, int n_faces);
 
