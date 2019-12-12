@@ -4,13 +4,12 @@
 typedef struct Card{
   int suit;
   int face;
+  const char *suit_string;
+  const char *face_string;
 } Card;
 
-//Return string of Card struct's "suit" int
-const char* strSuit(int suit);
-
-//Return string of Card struct's "face" int
-const char* strFace(int face);
+//Construct a Card struct
+void cardCreate(Card *card, int suit, int face);
 
 //return formatted string of Card struct info
 const char* cardStr(Card *card);

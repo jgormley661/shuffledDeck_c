@@ -18,9 +18,7 @@ void deckCreate(Card *deck, int n_suits, int n_faces){
 
   for(int i = 0; i < n_suits; ++i){
     for(int j = 0; j < n_faces; ++j){
-
-      deck[card_counter].suit = i;
-      deck[card_counter].face = j;
+      cardCreate(&deck[card_counter], i, j);
       ++card_counter;
     }
   }
