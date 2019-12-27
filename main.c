@@ -12,24 +12,24 @@ int main(){
   srand(time(NULL));
 
   //Define deck size
-  const int n_suits = 4;
-  const int n_faces = 13;
-  const int n_deck = n_suits * n_faces;
+  const int suit_count = 4;
+  const int face_count = 13;
+  const int deck_count = suit_count * face_count;
   
-  Card deck[n_deck];
+  Card deck[deck_count];
   
   //Assign values to an array of Card structs.
-  deckCreate(deck, n_suits, n_faces);
+  deckCreate(deck, suit_count, face_count);
 
-  int print_start = 0;
-  int print_end = n_deck;
+  const int print_start = 0;
+  const int print_end = deck_count;
 
   //Print Card array between start and end positions.
   printf("\nNot Shuffled\n");
   deckPrint(deck, print_start, print_end);
 
   //Shuffle an array of Card structs with Fisher-Yates Shuffle
-  deckShuffle(deck, n_deck);
+  deckShuffle(deck, deck_count);
 
   //Print Card array between start and end positions.
   printf("\nShuffled\n");
